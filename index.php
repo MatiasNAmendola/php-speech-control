@@ -1,7 +1,4 @@
 <?php
-session_start();
-include_once(__DIR__.'/classes/weather.php');
-include_once(__DIR__.'/classes/tools.php');
 include_once(__DIR__.'/classes/voice.php');
 $voice = new voice();
 $voice->run();

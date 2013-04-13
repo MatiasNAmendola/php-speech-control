@@ -1,9 +1,13 @@
 <?php
+include_once(__DIR__.'/classes/weather.php');
+include_once(__DIR__.'/classes/tools.php');
 class voice {
   private $_patterns = array();
   private $_debug = FALSE;
   
   public function __construct() {
+    session_start();
+
     $thankyou = array(
       'Bitte, gern geschehen',
       'Keine Ursache.',
