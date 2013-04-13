@@ -1,12 +1,14 @@
 <?php
 class weather {
   public function today($location) {
+    return "Die Wetter API ist nicht mehr verfügbar.";
     $location = urlencode($location);
     $api = simplexml_load_string(utf8_encode(file_get_contents('http://www.google.com/ig/api?weather='.$location.'&hl=de')));
     return $api->weather->current_conditions->condition->attributes()->data.' mit '.$api->weather->current_conditions->temp_c->attributes()->data.' Grad Celsius';
   }
   
   public function tomorrow($location) {
+    return "Die Wetter API ist nicht mehr verfügbar.";
     $location = urlencode($location);
     $api = simplexml_load_string(utf8_encode(file_get_contents('http://www.google.com/ig/api?weather='.$location.'&hl=de')));
     $conditions = array();
@@ -19,6 +21,7 @@ class weather {
   }
 
   public function dayaftertomorrow($location) {
+    return "Die Wetter API ist nicht mehr verfügbar.";
     $location = urlencode($location);
     $api = simplexml_load_string(utf8_encode(file_get_contents('http://www.google.com/ig/api?weather='.$location.'&hl=de')));
     $conditions = array();
