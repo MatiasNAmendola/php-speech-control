@@ -20,7 +20,6 @@ class voice {
     );      
   
     $weather = new weather();
-    $note = new note();
     $tools = new tools();
     $this->_patterns = array(
       array('/^(Hi|Hallo|Hello|Servus)$/i', $hello[rand(0, count($hello)-1)]),
