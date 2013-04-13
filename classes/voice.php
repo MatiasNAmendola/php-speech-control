@@ -1,6 +1,6 @@
 <?php
-include_once(__DIR__.'/classes/weather.php');
-include_once(__DIR__.'/classes/tools.php');
+include_once(__DIR__.'/weather.php');
+include_once(__DIR__.'/tools.php');
 class voice {
   private $_patterns = array();
   private $_debug = FALSE;
